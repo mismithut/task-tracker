@@ -92,7 +92,15 @@ def main():
     
     command = sys.argv[1].lower()
     
-    if command == 'list':
+    if command == 'help':
+        print("Task Tracker - Learn Development by Building!")
+        print("\nUsage:")
+        print("  python task_tracker.py help              - Show this help message")
+        print("  python task_tracker.py list              - Show all tasks")
+        print("  python task_tracker.py add 'description' - Add a new task")
+        print("  python task_tracker.py complete <id>     - Mark task as done")
+        print("  python task_tracker.py delete <id>       - Delete a task")
+    elif command == 'list':
         tracker.list_tasks()
     elif command == 'add':
         if len(sys.argv) < 3:
