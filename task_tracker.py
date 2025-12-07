@@ -30,6 +30,7 @@ class TaskTracker:
     
     def add_task(self, description):
         """Add a new task."""
+        # TODO: Add priority field (high, medium, low) in future update
         task = {
             'id': len(self.tasks) + 1,
             'description': description,
