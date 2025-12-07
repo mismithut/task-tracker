@@ -1,0 +1,3 @@
+# No external dependencies needed for this basic version!
+# As you enhance the project, you can add packages here
+# Example: requests==2.31.0
